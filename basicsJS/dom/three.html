@@ -8,4 +8,48 @@
 <body>
     
 </body>
+
+<script>
+
+
+    const divCreation = (className, id, backgroundColor, textContent, height) => {
+
+        const div = document.createElement('div')
+        // console.log(div)
+        div.className = className
+        div.id = id;
+        div.style.backgroundColor = backgroundColor
+
+        const addText = document.createTextNode(textContent)
+        div.appendChild(addText)
+        div.style.height = height
+        div.style.margin = "0";
+        return div;
+    };
+
+    
+    
+    const myDiv = divCreation("main", 10, "blue", "hawa manxe ", "100px");
+    console.log(myDiv)
+    document.body.appendChild(myDiv);
+
+    const myDiv1 = divCreation("secondary", 11, "pink", "pagalni ", "200px" );
+    console.log(myDiv1)
+    document.body.appendChild(myDiv1);
+
+   
+  
+    // const div = document.createElement('div')
+    // console.log(div);
+    // div.className = "main"
+    // div.id =  10;
+    // div.style.backgroundColor = "blue"
+    // div.style.padding = "20px"
+    // const addText = document.createTextNode("Anish Shrestha is my name")
+    // div.appendChild(addText)
+
+    // document.body.appendChild(div)
+
+    
+</script>
 </html>

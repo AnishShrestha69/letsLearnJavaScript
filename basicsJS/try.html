@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+</body>
+
+<script>
+    const detail = (className, textContent, color, height, width, backgroundColor) => {
+        const div = document.createElement('div')
+        div.className = className;
+        div.appendChild(document.createTextNode(textContent));
+        div.style.color = color;
+        div.style.height = height;
+        div.style.width = width;
+        div.style.backgroundColor = backgroundColor;
+        return div
+    }
+
+    const mydetail = detail("anish", "my name is anish shrestha", "pink", "200px", "100%", "black");
+    console.log(mydetail);
+    document.body.appendChild(mydetail)
+
+    const mydetail1 = detail("anish", "my name is anish shrestha", "pink", "200px", "300px", "brown");
+    console.log(mydetail1);
+    document.body.appendChild(mydetail1)
+
+</script>
+</html>
