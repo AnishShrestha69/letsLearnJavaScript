@@ -29,6 +29,26 @@ addLanguage = (langName) => {
     document.querySelector('.language').appendChild(li)
 }
 addLanguage("typeScript")
+addLanguage("typeScript1")
+addLanguage("typeScript2")
+addLanguage("typeScript3")
+addLanguage("typeScript4")
+
+
+//edit
+const secondLanguage = document.querySelector('li:nth-child(2)')
+const newli = document.createElement('li')
+newli.textContent = "hahahaha"
+secondLanguage.replaceWith(newli)
+
+//edit 
+const secondLanguage1 = document.querySelector('li:nth-child(1)')
+secondLanguage1.outerHTML = "<li>hello world</li>"
+
+//remove
+const lastLang = document.querySelector('li:last-child')
+lastLang.remove();
+
 </script>
 
 </html>
