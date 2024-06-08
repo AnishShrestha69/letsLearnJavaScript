@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello world</h1>
+    <button id="btn">Start</button>
+    <button id="btn1">Stop</button>
+</body>
+<script>
+    let intervalID;
+    const intervalSet = function(){
+        console.log("anish", Date.now())
+    }
+    document.querySelector('#btn').addEventListener('click', function(){
+        intervalID = setInterval(intervalSet, 1000)
+    })
+    document.querySelector('#btn1').addEventListener('click', function(){
+        clearInterval(intervalID)
+    })
+
+</script>
+</html>
