@@ -36,11 +36,14 @@
     background-color: transparent;
     color: aliceblue;
     border: 2px white solid;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 30px;
   }
   
   button:hover {
     color: black;
     background-color: aliceblue;
     cursor: pointer;
+
   }
-  
